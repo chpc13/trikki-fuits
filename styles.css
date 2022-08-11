@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Black Han Sans', sans-serif;
+}
+
+.header {
+     display: flex;
+     justify-content: center;
+     margin: 1.5rem 0;
+     color: yellowgreen;
+}
+
+.header h1 {
+     text-align: center;
+}
+
+.box {
+     background-color: crimson;
+     border-radius: 50px;
+     width: calc(100vw - 10rem);
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 1.5rem;
+     flex-direction: column;
+     box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+     padding: 1.2rem;
+}
+
+.row {
+     display: flex;
+     justify-content: space-between;
+     gap: 1.5rem;
+}
+
+.btn {
+     background-color: indianred;
+     width: calc((100% / 3) - 50px);
+     height: 10rem;
+     border-radius: 1.5rem;
+     -webkit-border-radius: 1.5rem;
+     -moz-border-radius: 1.5rem;
+     -ms-border-radius: 1.5rem;
+     -o-border-radius: 1.5rem;
+     border: 1px solid #aaa;
+     text-align: center;
+     font-size: 1.8rem;
+     font-weight: 500;
+}
+
+.btn:hover {
+     cursor: pointer;
+     background-color: rgb(94, 235, 134);
+}
+
+.btn:disabled {
+     color: #000;
+     cursor: no-drop;
+}
+
+.result {
+     text-align: center;
+     font-size: 1.2rem;
+}
+
+.reset {
+    background-color:  rgb(152, 152, 243);
+     text-align: center;
+     margin: 10px 0;
+}
+
+#reset {
+     border: 1px solid #000;
+     cursor: pointer;
+     color: #000;
+     background-color: #fff;
+     border-radius: 0.5rem;
+     -webkit-border-radius: 0.5rem;
+     -moz-border-radius: 0.5rem;
+     -ms-border-radius: 0.5rem;
+     -o-border-radius: 0.5rem;
+     padding: 5px 10px;
+     font-size: 1.1rem;
+     margin: 5px 0;
+     transition: all 0.3s ease-in-out;
+     -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     -ms-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+}
+
+#reset:hover {
+     color: rgb(141, 30, 123);
+     background-color: rgb(19, 139, 219);
+}
+
+@media only screen and (max-width : 480px) {
+     .box{
+          width: 100vw;
+     }
+     .btn{
+          width: calc(100% / 3);
+     }
+     .currentPlayer {
+          width: 10px;
+          height: 50px;
+     }
+}
